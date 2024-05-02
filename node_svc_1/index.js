@@ -4,7 +4,7 @@ var apm = require('elastic-apm-node').start({
   
     // Use if APM Server requires a secret token
     secretToken: 'supersecrettoken', // from Step 6
-    serverUrl: 'http://fleet-server:8200',
+    serverUrl: 'http://localhost:8200', // http://fleet-server:8200 from within Docker
     verifyServerCert: true,
     environment: 'development'
   });
